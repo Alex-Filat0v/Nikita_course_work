@@ -1,0 +1,903 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Шаблон Тура</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Шаблон туристического сайта"/>
+        <meta name="keywords" content="тур, путешествие, отдых, отели, авиабилеты"/>
+        <meta name="author" content="Ваше Имя/Название Компании"/>
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content="Туристическое Агентство ОЗОБОК"/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content="Туристическое Агентство ОЗОБОК"/>
+        <meta property="og:description" content="Лучшие туры и предложения для вашего отдыха"/>
+        <meta name="twitter:title" content="Туристическое Агентство ОЗОБОК"/>
+        <meta name="twitter:image" content=""/>
+        <meta name="twitter:url" content=""/>
+        <meta name="twitter:card" content=""/>
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Magnific Popup -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="css/flexslider.css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <!-- Date Picker -->
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+        <!-- Flaticons  -->
+        <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Modernizr JS -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+    </head>
+    <body>
+        <div class="colorlib-loader"></div>
+        <div id="page">
+            <nav class="colorlib-nav" role="navigation">
+                <div class="top-menu">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <div id="colorlib-logo">
+                                    <a href="index.html">Туристическое агенство "ОЗОБОК"</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-10 text-right menu-1">
+                                <ul>
+                                    <li class="active">
+                                        <a href="index.html">Главная</a>
+                                    </li>
+                                    <li class="has-dropdown"><a href="tours.html">Туры</a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a href="#">Маршруты</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Круизы</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Отели</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Бронирование</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="hotels.html">Отели</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Услуги</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html">Блог</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">О нас</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Контакты</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">Вход</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <aside id="colorlib-hero">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li style="background-image: url(images/img_bg_1.jpg);">
+                            <div class="overlay"></div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                        <div class="slider-text-inner text-center">
+                                            <h2>Двухдневный тур</h2>
+                                            <h1>Удивительные каникулы на Мальдивах</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(images/img_bg_2.jpg);">
+                            <div class="overlay"></div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                        <div class="slider-text-inner text-center">
+                                            <h2>10 дней круиза</h2>
+                                            <h1>Из Греции в Испанию</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(images/img_bg_5.jpg);">
+                            <div class="overlay"></div>
+                            <div class="container-fluids">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                        <div class="slider-text-inner text-center">
+                                            <h2>Изучайте мир вместе с нами</h2>
+                                            <h1>Туристическое агенство "ОЗОБОК"</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(images/img_bg_4.jpg);">
+                            <div class="overlay"></div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                        <div class="slider-text-inner text-center">
+                                            <h2>Отправтесь в</h2>
+                                            <h1>Лучшую поездку в вашей жизни</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>                         
+                    </ul>
+                </div>
+            </aside>
+            <div id="colorlib-reservation">
+                <!-- <div class="container"> -->
+                <div class="row">
+                    <div class="search-wrap">
+                        <div class="container">
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a data-toggle="tab" href="#flight"><i class="flaticon-plane"></i> Авиабилеты</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#hotel"><i class="flaticon-resort"></i> Отель</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#car"><i class="flaticon-car"></i> Аренда машины</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#cruises"><i class="flaticon-boat"></i> Круизы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div id="flight" class="tab-pane fade in active">
+                                <form method="post" class="colorlib-form">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="date">Откуда:</label>
+                                                <div class="form-field">
+                                                    <input type="text" id="location" class="form-control" placeholder="Введите место">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="date">Дата отправления:</label>
+                                                <div class="form-field"><i class="icon icon-calendar2"></i>
+                                                    <input type="text" id="date" class="form-control date" placeholder="Введите дату">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="date">Дата возвращения:</label>
+                                                <div class="form-field"><i class="icon icon-calendar2"></i>
+                                                    <input type="text" id="date" class="form-control date" placeholder="Введите дату">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="guests">Количество человек</label>
+                                                <div class="form-field"><i class="icon icon-arrow-down3"></i>
+                                                    <select name="people" id="people" class="form-control">
+                                                        <option value="#">1</option>
+                                                        <option value="#">2</option>
+                                                        <option value="#">3</option>
+                                                        <option value="#">4</option>
+                                                        <option value="#">5+</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="submit" name="submit" id="submit" value="Найти билеты" class="btn btn-primary btn-block">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="hotel" class="tab-pane fade">
+                                <form method="post" class="colorlib-form">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="booknow">
+                                                <h2>Забронировать</h2><span>Лучшая цена онлайн</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="date">Заезд:</label>
+                                                <div class="form-field"><i class="icon icon-calendar2"></i>
+                                                    <input type="text" id="date" class="form-control date" placeholder="Дата заезда">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="date">Выезд:</label>
+                                                <div class="form-field"><i class="icon icon-calendar2"></i>
+                                                    <input type="text" id="date" class="form-control date" placeholder="Дата выезда">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="guests">Гостей</label>
+                                                <div class="form-field"><i class="icon icon-arrow-down3"></i>
+                                                    <select name="people" id="people" class="form-control">
+                                                        <option value="#">1</option>
+                                                        <option value="#">2</option>
+                                                        <option value="#">3</option>
+                                                        <option value="#">4</option>
+                                                        <option value="#">5+</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="submit" name="submit" id="submit" value="Найти отель" class="btn btn-primary btn-block">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="car" class="tab-pane fade">
+                                <form method="post" class="colorlib-form">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="date">Где:</label>
+                                                <div class="form-field">
+                                                    <input type="text" id="location" class="form-control" placeholder="Поиск места">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="date">Дата начала:</label>
+                                                <div class="form-field"><i class="icon icon-calendar2"></i>
+                                                    <input type="text" id="date" class="form-control date" placeholder="Дата начала аренды">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="date">Дата возврата:</label>
+                                                <div class="form-field"><i class="icon icon-calendar2"></i>
+                                                    <input type="text" id="date" class="form-control date" placeholder="Дата возврата">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="submit" name="submit" id="submit" value="Найти машину" class="btn btn-primary btn-block">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="cruises" class="tab-pane fade">
+                                <form method="post" class="colorlib-form">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="date">Куда:</label>
+                                                <div class="form-field">
+                                                    <input type="text" id="location" class="form-control" placeholder="Поиск направления">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="date">Дата начала:</label>
+                                                <div class="form-field"><i class="icon icon-calendar2"></i>
+                                                    <input type="text" id="date" class="form-control date" placeholder="Дата начала круиза">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="guests">Категории</label>
+                                                <div class="form-field"><i class="icon icon-arrow-down3"></i>
+                                                    <select name="category" id="category" class="form-control">
+                                                        <option value="#">Люкс</option>
+                                                        <option value="#">Супер Делюкс</option>
+                                                        <option value="#">С балконом</option>
+                                                        <option value="#">Эконом</option>
+                                                        <option value="#">Премиум</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="submit" name="submit" id="submit" value="Найти круизы" class="btn btn-primary btn-block">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="colorlib-services">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-3 animate-box text-center aside-stretch">
+                        <div class="services"><span class="icon"> <i class="flaticon-around"></i> </span>
+                            <h3>Удивительные путешествия</h3>
+                            <p>Мы предлагаем незабываемые впечатления от путешествий по всему миру, открывая новые горизонты и культуры.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 animate-box text-center">
+                        <div class="services"><span class="icon"> <i class="flaticon-boat"></i> </span>
+                            <h3>Наши круизы</h3>
+                            <p>Откройте для себя великолепие морских просторов с нашими круизными предложениями на любой вкус и бюджет.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 animate-box text-center">
+                        <div class="services"><span class="icon"> <i class="flaticon-car"></i> </span>
+                            <h3>Забронируйте поездку</h3>
+                            <p>Легкое и удобное бронирование туров, отелей и билетов для вашего идеального отпуска без лишних хлопот.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 animate-box text-center">
+                        <div class="services"><span class="icon"> <i class="flaticon-postcard"></i> </span>
+                            <h3>Отличная поддержка</h3>
+                            <p>Наша команда всегда готова помочь вам на каждом этапе планирования и во время вашего путешествия.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="colorlib-tour colorlib-light-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+                        <h2>Популярные направления</h2>
+                        <p>Мы рады поделиться нашими самыми востребованными направлениями, которые выбирают тысячи путешественников.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tour-wrap"><a href="#" class="tour-entry animate-box"> <div class="tour-img" style="background-image: url(images/tour-1.jpg);">
+</div> <span class="desc"> <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p> <h2>Афины, Греция</h2> <span class="city">Афины, Греция</span> <span class="price">$450</span> </span> </a><a href="#" class="tour-entry animate-box"> <div class="tour-img" style="background-image: url(images/tour-2.jpg);">
+</div> <span class="desc"> <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p> <h2>Семейный тур в Таиланд</h2> <span class="city">Бангкок, Таиланд</span> <span class="price">$450</span> </span> </a><a href="#" class="tour-entry animate-box"> <div class="tour-img" style="background-image: url(images/tour-3.jpg);">
+</div> <span class="desc"> <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p> <h2>Семейный тур на Филиппины</h2> <span class="city">Липа, Филиппины</span> <span class="price">$450</span> </span> </a><a href="#" class="tour-entry animate-box"> <div class="tour-img" style="background-image: url(images/tour-4.jpg);">
+</div> <span class="desc"> <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p> <h2>Семейный тур в Грецию</h2> <span class="city">Афины, Греция</span> <span class="price">$450</span> </span> </a><a href="#" class="tour-entry animate-box"> <div class="tour-img" style="background-image: url(images/tour-5.jpg);">
+</div> <span class="desc"> <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p> <h2>Тур по Италии</h2> <span class="city">Рим, Италия</span> <span class="price">$450</span> </span> </a><a href="#" class="tour-entry animate-box"> <div class="tour-img" style="background-image: url(images/tour-6.jpg);">
+</div> <span class="desc"> <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p> <h2>Отдых на Бали</h2> <span class="city">Денпасар, Индонезия</span> <span class="price">$450</span> </span> </a><a href="#" class="tour-entry animate-box"> <div class="tour-img" style="background-image: url(images/tour-7.jpg);">
+</div> <span class="desc"> <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p> <h2>Путешествие в Париж</h2> <span class="city">Париж, Франция</span> <span class="price">$450</span> </span> </a><a href="#" class="tour-entry animate-box"> <div class="tour-img" style="background-image: url(images/tour-8.jpg);">
+</div> <span class="desc"> <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p> <h2>Экскурсия по Лондону</h2> <span class="city">Лондон, Великобритания</span> <span class="price">$450</span> </span> </a>
+            </div>
+        </div>
+        <div id="colorlib-blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+                        <h2>Последние статьи блога</h2>
+                        <p>Читайте наши свежие статьи о путешествиях, советы экспертов и вдохновляющие истории от других туристов.</p>
+                    </div>
+                </div>
+                <div class="blog-flex">
+                    <div class="f-entry-img" style="background-image: url(images/blog-3.jpg);">
+</div>
+                    <div class="blog-entry aside-stretch-right">
+                        <div class="row">
+                            <div class="col-md-12 animate-box"><a href="blog.html" class="blog-post"> <span class="img" style="background-image: url(images/blog-1.jpg);"></span> <div class="desc"><span class="date">22 февр. 2024 г.</span>
+                                        <h3>Полное руководство по лучшим ресторанам</h3><span class="cat">Активности</span>
+                                    </div> </a>
+                            </div>
+                            <div class="col-md-12 animate-box"><a href="blog.html" class="blog-post"> <span class="img" style="background-image: url(images/blog-2.jpg);"></span> <div class="desc"><span class="date">22 февр. 2024 г.</span>
+                                        <h3>Как эти 5 человек нашли путь к путешествию своей мечты</h3><span class="cat">Советы</span>
+                                    </div> </a>
+                            </div>
+                            <div class="col-md-12 animate-box"><a href="blog.html" class="blog-post"> <span class="img" style="background-image: url(images/blog-4.jpg);"></span> <div class="desc"><span class="date">22 февр. 2024 г.</span>
+                                        <h3>Наш секретный лодочный тур на остров — только для вас</h3><span class="cat">Эксклюзив</span>
+                                    </div> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="colorlib-intro" class="intro-img" style="background-image: url(images/cover-img-1.jpg);" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 animate-box">
+                        <div class="intro-desc">
+                            <div class="text-salebox">
+                                <div class="text-lefts">
+                                    <div class="sale-box">
+                                        <div class="sale-box-top">
+                                            <h2 class="number">45</h2><span class="sup-1">%</span><span class="sup-2">Скидка</span>
+                                        </div>
+                                        <h2 class="text-sale">Распродажа</h2>
+                                    </div>
+                                </div>
+                                <div class="text-rights">
+                                    <h3 class="title">Торопитесь, предложение ограничено!</h3>
+                                    <p>Воспользуйтесь нашим специальным предложением и сделайте свой отдых незабываемым.</p>
+                                    <p><a href="#" class="btn btn-primary">Забронировать</a> <a href="#" class="btn btn-primary btn-outline"> Читать далее</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 animate-box">
+                        <div class="video-wrap">
+                            <div style="background-image: url(images/img_bg_2.jpg); padding-bottom: 0px; margin-bottom: -24px; padding-right: 0px; padding-left: 482px; margin-left: 157px; margin-right: -54px;" class="colorlib-video video"><a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="colorlib-hotel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+                        <h2>Рекомендуемые отели</h2>
+                        <p>Мы подобрали для вас лучшие отели с высоким рейтингом и отличными отзывами от наших клиентов.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 animate-box">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <div class="hotel-entry"><a href="hotels.html" class="hotel-img" style="background-image: url(images/hotel-1.jpg);"> <p class="price"><span>$120</span><small> /ночь</small></p> </a>
+                                    <div class="desc">
+                                        <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p>
+                                        <h3><a href="#">Отель "Эдисон"</a></h3><span class="place">Нью-Йорк, США</span>
+                                        <p>Уютный отель в центре города, предлагающий комфортное размещение и высокий уровень сервиса.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="hotel-entry"><a href="hotels.html" class="hotel-img" style="background-image: url(images/hotel-2.jpg);"> <p class="price"><span>$120</span><small> /ночь</small></p> </a>
+                                    <div class="desc">
+                                        <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p>
+                                        <h3><a href="#">Отель "Плаза"</a></h3><span class="place">Париж, Франция</span>
+                                        <p>Роскошный отель с видом на Эйфелеву башню, идеальное место для романтического отдыха.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="hotel-entry"><a href="hotels.html" class="hotel-img" style="background-image: url(images/hotel-3.jpg);"> <p class="price"><span>$120</span><small> /ночь</small></p> </a>
+                                    <div class="desc">
+                                        <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p>
+                                        <h3><a href="#">Курорт "Морской Бриз"</a></h3><span class="place">Мальдивы</span>
+                                        <p>Эксклюзивный курорт на берегу океана, предлагающий бунгало на воде и белоснежные пляжи.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="hotel-entry"><a href="hotels.html" class="hotel-img" style="background-image: url(images/hotel-4.jpg);"> <p class="price"><span>$120</span><small> /ночь</small></p> </a>
+                                    <div class="desc">
+                                        <p class="star"><span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span> 545 Отзывов</p>
+                                        <h3><a href="#">Отель "Альпы"</a></h3><span class="place">Цюрих, Швейцария</span>
+                                        <p>Очаровательный отель в горах, предлагающий великолепные виды и доступ к горнолыжным трассам.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="colorlib-testimony" class="colorlib-light-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+                        <h2>Отзывы наших довольных гостей</h2>
+                        <p>Послушайте, что говорят наши клиенты о своем опыте путешествий с нами и о качестве наших услуг.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 animate-box"> 
+                        <div class="owl-carousel2">
+                            <div class="item">
+                                <div class="testimony text-center"><span class="img-user" style="background-image: url(images/person1.jpg);"></span><span class="user">Алиша Майерс</span><small>Майами, Флорида, США</small>
+                                    <blockquote>
+                                        <p>"Незабываемое путешествие! Все было организовано на высшем уровне, обязательно обращусь снова."</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimony text-center"><span class="img-user" style="background-image: url(images/person2.jpg);"></span><span class="user">Джеймс Фишер</span><small>Нью-Йорк, США</small>
+                                    <blockquote>
+                                        <p>"Отличный сервис и внимательное отношение к клиентам. Моя поездка превзошла все ожидания."</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimony text-center"><span class="img-user" style="background-image: url(images/person3.jpg);"></span><span class="user">Джейкоб Уэбб</span><small>Афины, Греция</small>
+                                    <blockquote>
+                                        <p>"Благодаря этому агентству мой отпуск стал по-настоящему сказочным. Рекомендую всем друзьям!"</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>
+        <div class="colorlib-tour">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+                        <h2>Самые популярные страны для путешествий</h2>
+                        <p>Откройте для себя страны, которые чаще всего выбирают наши путешественники для незабываемого отдыха.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="f-tour">
+                            <div class="row row-pb-md">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6 animate-box"><a href="tours.html" class="f-tour-img" style="background-image: url(images/tour-1.jpg);"> <div class="desc">
+                                                    <h3>Рим - 5 дней</h3>
+                                                    <p class="price"><span>$120</span> <small>/ чел.</small></p>
+                                                </div> </a>
+                                        </div>
+                                        <div class="col-md-6 animate-box"><a href="tours.html" class="f-tour-img" style="background-image: url(images/tour-2.jpg);"> <div class="desc">
+                                                    <h3>Париж - 5 дней</h3>
+                                                    <p class="price"><span>$120</span> <small>/ чел.</small></p>
+                                                </div> </a>
+                                        </div>
+                                        <div class="col-md-6 animate-box"><a href="tours.html" class="f-tour-img" style="background-image: url(images/tour-3.jpg);"> <div class="desc">
+                                                    <h3>Венеция - 3 дня</h3>
+                                                    <p class="price"><span>$120</span> <small>/ чел.</small></p>
+                                                </div> </a>
+                                        </div>
+                                        <div class="col-md-6 animate-box"><a href="tours.html" class="f-tour-img" style="background-image: url(images/tour-4.jpg);"> <div class="desc">
+                                                    <h3>Афины - 4 дня</h3>
+                                                    <p class="price"><span>$120</span> <small>/ чел.</small></p>
+                                                </div> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 animate-box">
+                                    <div class="desc">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h3>Италия, Европа</h3>
+                                                <p>Италия — страна с богатой историей, культурой и невероятной кухней. Откройте для себя ее очарование с нашими турами, посетите древние руины Рима, романтические каналы Венеции и живописные пейзажи Тосканы.</p>
+                                                <br>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <h4>Лучшие города для туров</h4>
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Рим</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Милан</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Генуя</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Верона</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Венеция</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Болонья</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Триест</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Флоренция</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Палермо</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Сиена</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Сан-Марино</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Неаполь</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p><a href="tours.html" class="btn btn-primary">Посмотреть все места</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="f-tour">
+                            <div class="row">
+                                <div class="col-md-6 col-md-push-6">
+                                    <div class="row">
+                                        <div class="col-md-6 animate-box"><a href="tours.html" class="f-tour-img" style="background-image: url(images/tour-5.jpg);"> <div class="desc">
+                                                    <h3>Санторини - 7 дней</h3>
+                                                    <p class="price"><span>$150</span> <small>/ чел.</small></p>
+                                                </div> </a>
+                                        </div>
+                                        <div class="col-md-6 animate-box"><a href="tours.html" class="f-tour-img" style="background-image: url(images/tour-6.jpg);"> <div class="desc">
+                                                    <h3>Крит - 7 дней</h3>
+                                                    <p class="price"><span>$140</span> <small>/ чел.</small></p>
+                                                </div> </a>
+                                        </div>
+                                        <div class="col-md-6 animate-box"><a href="tours.html" class="f-tour-img" style="background-image: url(images/tour-7.jpg);"> <div class="desc">
+                                                    <h3>Родос - 6 дней</h3>
+                                                    <p class="price"><span>$130</span> <small>/ чел.</small></p>
+                                                </div> </a>
+                                        </div>
+                                        <div class="col-md-6 animate-box"><a href="tours.html" class="f-tour-img" style="background-image: url(images/tour-8.jpg);"> <div class="desc">
+                                                    <h3>Корфу - 5 дней</h3>
+                                                    <p class="price"><span>$120</span> <small>/ чел.</small></p>
+                                                </div> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 animate-box col-md-pull-6 text-right">
+                                    <div class="desc">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h3>Афины, Греция</h3>
+                                                <p>Греция — колыбель цивилизации, страна мифов, солнца и невероятных пляжей. Отправляйтесь в незабываемое путешествие по историческим местам Афин, насладитесь красотой островов и гостеприимством местных жителей.</p>
+                                                <br>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <h4>Лучшие города и острова</h4>
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Афины</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Салоники</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Ираклион</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Родос</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Санторини</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Миконос</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Крит</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Корфу</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Закинф</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Парос</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Наксос</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Кос</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p><a href="tours.html" class="btn btn-primary">Посмотреть все места</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="colorlib-subscribe" style="background-image: url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+                        <h2>Подпишитесь на рассылку</h2>
+                        <p>Подпишитесь на нашу рассылку, чтобы получать последние обновления и специальные предложения.</p>
+                        <form class="form-inline qbstp-header-subscribe">
+                            <div class="row">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email" placeholder="Введите ваш e-mail">
+                                        <button type="submit" class="btn btn-primary">Подписаться</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="colorlib-footer" role="contentinfo">
+            <div class="container">
+                <div class="row row-pb-md">
+                    <div class="col-md-3 colorlib-widget">
+                        <h4>Туристическое агенство "ОЗОБОК"</h4>
+                        <p>Мы предлагаем полный спектр туристических услуг, от подбора тура до организации индивидуальных путешествий. Ваше идеальное путешествие начинается здесь.</p>
+                        <p> <ul class="colorlib-social-icons">
+                                <li>
+                                    <a href="#"><i class="icon-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-dribbble"></i></a>
+                                </li>
+                            </ul> </p>
+                    </div>
+                    <div class="col-md-2 colorlib-widget">
+                        <h4>Забронировать</h4>
+                        <p> <ul class="colorlib-footer-links">
+                                <li>
+                                    <a href="#">Авиабилеты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отели</a>
+                                </li>
+                                <li>
+                                    <a href="#">Туры</a>
+                                </li>
+                                <li>
+                                    <a href="#">Аренда авто</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пляжи и курорты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Круизы</a>
+                                </li>
+                            </ul> </p>
+                    </div>
+                    <div class="col-md-2 colorlib-widget">
+                        <h4>Лучшие предложения</h4>
+                        <p> <ul class="colorlib-footer-links">
+                                <li>
+                                    <a href="#">Отель "Эдина"</a>
+                                </li>
+                                <li>
+                                    <a href="#">Апартаменты "Качество"</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отель "Зефир"</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вилла "Да Винчи"</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отель "Эпик"</a>
+                                </li>
+                            </ul> </p>
+                    </div>
+                    <div class="col-md-2">
+                        <h4>Статьи блога</h4>
+                        <ul class="colorlib-footer-links">
+                            <li>
+                                <a href="#">Идеальный список вещей для женщин-путешественниц</a>
+                            </li>
+                            <li>
+                                <a href="#">Как эти 5 человек нашли путь к путешествию своей мечты</a>
+                            </li>
+                            <li>
+                                <a href="#">Полный гид по лучшим ресторанам и барам города</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-md-push-1">
+                        <h4>Контактная информация</h4>
+                        <ul class="colorlib-footer-links">
+                            <li>ул. Южная 21, офис 721<br> Москва, Россия 10016
+                            </li>
+                            <li>
+                                <a href="tel://1234567920">+7 (123) 456-78-90</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@yoursite.com">info@ozobok-tour.ru</a>
+                            </li>
+                            <li>
+                                <a href="#">ozobok-tour.ru</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>
+Copyright ©<script>document.write(new Date().getFullYear());</script> Все права защищены | Этот шаблон предоставлен вам <i class="icon-heart2" aria-hidden="true"></i> <a href="https://freeprojectscodes.com" target="_blank">FreeProjectsCodes</a></span> <span class="block">Демо-изображения: <a href="http://unsplash.co/" target="_blank">Unsplash</a> , <a href="http://pexels.com/" target="_blank">Pexels.com</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="gototop js-top"><a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+</div>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- Owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Date Picker -->
+<script src="js/bootstrap-datepicker.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
