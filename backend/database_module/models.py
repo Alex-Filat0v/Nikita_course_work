@@ -1,17 +1,23 @@
-from pydantic import BaseModel, EmailStr
-from datetime import datetime
-
+from pydantic import BaseModel
+from typing import Optional
 
 class User(BaseModel):
     username: str
-    email: EmailStr
-    password_hash: str
-
+    password: str
+    email: str
+    full_name: Optional[str] = None
+    birth_date: Optional[str] = None
 
 class Tour(BaseModel):
-    title: str
-    description: str
-    price: float
+    id: str
+    country: str
+    departure_date: str
     duration: int
-    is_active: bool = True
-    created_at: datetime = datetime.now()
+    available_slots: int
+    price: float
+
+class Booking(BaseModel):
+    user_id: str
+    tour_id: str
+    participants: int
+    passport_data: list[str]
