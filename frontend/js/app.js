@@ -1,47 +1,52 @@
+
 document.addEventListener('DOMContentLoaded', () => {
-    const registerForm = document.getElementById('register-form');
-    if (registerForm) {
-        registerForm.addEventListener('submit', async (e) => {
+    const socket = new WebSocket('ws://localhost:8000');
+
+    // Авторизация
+    const loginForm = document.getElementById('login-form');
+    if (loginForm) {
+        loginForm.addEventListener('submit', (e) => {
             e.preventDefault();
-
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            // Basic validation
-            if (!username || !password) {
-                alert('Username and password are required');
-                return;
-            }
-
-            // Connect to WebSocket
-            const socket = new WebSocket('ws://localhost:8000');
-
-            socket.onopen = () => {
-                console.log('Connected to server');
-                const message = {
-                    action: 'register',
-                    username: username,
-                    password: password
-                };
-                socket.send(JSON.stringify(message));
+            const username = document.getElementById('log-username').value;
+            const password = document.getElementById('log-password').value;
+            const msg = {
+                action: "login",
+                username,
+                password
             };
-
-            socket.onmessage = (event) => {
-                const response = JSON.parse(event.data);
-                if (response.status === 'success') {
-                    alert('Registration successful! You can now login');
-                    window.location.href = 'login.html';
-                } else {
-                    alert('Error: ' + response.message);
-                }
-                socket.close();
-            };
-
-            socket.onerror = (error) => {
-                console.error('WebSocket error:', error);
-                alert('Connection error. Please try again.');
-                socket.close();
-            };
+            socket.send(JSON.stringify(msg));
         });
     }
+
+    // Регистрация
+    const registerForm = document.getElementById('register-form');
+    if (registerForm) {
+        registerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('reg-username').value;
+            const email = document.getElementById('reg-email').value;
+            const password = document.getElementById('reg-password').value;
+            const msg = {
+                action: "register",
+                username,
+                email,
+                password
+            };
+            socket.send(JSON.stringify(msg));
+        });
+    }
+
+    // Обработка ответа от сервера
+    socket.addEventListener("message", (event) => {
+        const res = JSON.parse(event.data);
+        alert(res.message);
+        if (res.status === "success" && res.user_id) {
+            localStorage.setItem("user_id", res.user_id);
+            window.location.href = "index.html";
+        }
+    });
+
+    socket.addEventListener("open", () => console.log("WebSocket connected"));
+    socket.addEventListener("close", () => console.log("WebSocket disconnected"));
+    socket.addEventListener("error", (err) => console.error("WebSocket error:", err));
 });
