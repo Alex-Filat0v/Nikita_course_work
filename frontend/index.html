@@ -880,6 +880,32 @@ Copyright ©<script>document.write(new Date().getFullYear());</script> Все п
 </div>
 <div class="gototop js-top"><a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
 </div>
+        <script>
+    const socket = new WebSocket(`ws://${window.location.host}/ws`);
+
+    socket.onopen = function(e) {
+        console.log("[WebSocket] Connection established");
+        // Можно отправить первое сообщение при подключении
+        socket.send("Hello from client!");
+    };
+
+    socket.onmessage = function(event) {
+        console.log(`[WebSocket] Received: ${event.data}`);
+        // Здесь можно обрабатывать входящие сообщения
+    };
+
+    socket.onclose = function(event) {
+        if (event.wasClean) {
+            console.log(`[WebSocket] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+        } else {
+            console.log('[WebSocket] Connection died');
+        }
+    };
+
+    socket.onerror = function(error) {
+        console.log(`[WebSocket] Error: ${error.message}`);
+    };
+    </script>
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- jQuery Easing -->
